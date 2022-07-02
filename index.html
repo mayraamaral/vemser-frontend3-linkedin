@@ -13,13 +13,13 @@
   <header>
     <div class="container">
       <div class="logo">
-        <a href="#"><img src="./assets/img/logo.svg" alt="Logo"></a>
+        <a href="./"><img src="./assets/img/logo.svg" alt="Logo"></a>
       </div>
       <nav>
         <ul>
           <li>
-            <a href="#"><img src="./assets/icons/rss.svg" alt="Feed"></a>
-            <a href="#">Feed</a>
+            <a href="./feed"><img src="./assets/icons/rss.svg" alt="Feed"></a>
+            <a href="./feed">Feed</a>
           </li>
           <li>
             <a href="#"><img src="./assets/icons/users.svg" alt="Network"></a>
@@ -64,23 +64,157 @@
     </div>
   </header>
 
-  <main>
-    <section></section> <!--perfil-->
-    <section></section> <!--about e botões superiores -->
-    <section></section> <!--projects-->
-    <section></section> <!--skills-->
-    <section></section> <!--experience -->
-    <section></section> <!--education-->
-  </main>
-
-  <aside>
-    <section></section> <!--dados-->
-    <section></section> <!--visitantes-->
-    <section></section> <!--cursos recomendados-->
-  </aside>
+  <div class="container">
+    <main>
+      <section></section> <!--perfil-->
+      <section></section> <!--about e botões superiores -->
+      <section></section> <!--projects-->
+      <section></section> <!--skills-->
+      <section></section> <!--experience -->
+      <section class="education">
+        <h2>Education</h2>
+        <div>
+          <img src="./assets/img/university.svg" alt="University">
+          <div class="education-text">
+            <h3>Moscow State Linguistic University</h3>
+            <p>Bachelor's degree Field of Study Computer and Information Systems Security/Information Assurance</p>
+            <p>2013 - 2017</p>
+            <p>Additional English classes and UX profile courses</p>
+          </div>
+        </div>
+      </section> <!--education-->
+    </main>
+  
+    <aside>
+      <section class="data">
+        <div>
+          <h2>Your Dashboard</h2>
+          <a href="#">Go to stats</a>
+        </div>
+        <h2>367</h2>
+        <p>views today</p>
+        <h2>15</h2>
+        <p>post views</p>
+        <h2>9</h2>
+        <p>search appereances</p>
+      </section> <!--dados-->
+      <section class="visitors">
+        <div class="visitors-title">
+          <h2>Visitors</h2>
+          <a href="#">View all</a>
+        </div>
+  
+        <div class="visitors-cards">
+          <div class="visitor">
+            <img src="./assets/img/visitor-1.svg" alt="Visitor">
+            <div>
+              <p>Darlene Black</p>
+              <p>HR manager, 10 000 connec...</p>
+            </div>
+          </div>
+          <div class="visitor">
+            <img src="./assets/img/visitor-2.svg" alt="Visitor">
+            <div>
+              <p>Theresa Steward</p>
+              <p>iOS Developer</p>
+            </div>
+          </div>
+          <div class="visitor">
+            <img src="./assets/img/visitor-3.svg" alt="Visitor">
+            <div>
+              <p>Brandon Wilson</p>
+              <p>Senior UX Designer</p>
+            </div>
+          </div>
+          <div class="visitor">
+            <img src="./assets/img/visitor-4.svg" alt="Visitor">
+            <div>
+              <p>Kyle Fisher</p>
+              <p>Product Designer at Com...</p>
+            </div>
+          </div>
+          <div class="visitor">
+            <img src="./assets/img/visitor-5.svg" alt="Visitor">
+            <div>
+              <p>Audrey Alexander</p>
+              <p>Team Lead at Google</p>
+            </div>
+          </div>
+        </div>
+  
+      </section> <!--visitantes-->
+      
+      <section class="courses">
+        <h2>You may like these courses</h2>
+        <div class="video">
+          <img src="./assets/img/video-1.svg" alt="Video">
+          <div>
+            <h2>UX Foundations: Prototyping</h2>
+            <p>27,959 views</p>
+          </div>
+        </div>
+        <div class="video">
+          <img src="./assets/img/video-2.svg" alt="Video">
+          <div>
+            <h2>Designing with Adobe XD and...</h2>
+            <p>9,122 views</p>
+          </div>
+        </div>
+        <div class="video">
+          <img src="./assets/img/video-3.svg" alt="Video">
+          <div>
+            <h2>UX Foundations: Styles and GUIs</h2>
+            <p>13,858 views</p>
+          </div>
+        </div>
+      </section> <!--cursos recomendados-->
+    </aside>
+  </div>
 
   <footer>
-    
+    <div class="container">
+      <img src="./assets/img/logo-footer.svg" alt="Logo - Footer">
+      <nav>
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Advertising</a></li>
+          <li><a href="#">Small Business</a></li>
+        </ul>
+      </nav>
+      <nav>
+        <ul>
+          <li><a href="#">Talent Solutions</a></li>
+          <li><a href="#">Marketing Solutions</a></li>
+          <li><a href="#">Sales Solutions</a></li>
+          <li><a href="#">Safety Center</a></li>
+        </ul>
+      </nav>
+      <nav>
+        <ul>
+          <li><a href="#">Community Guidelines</a></li>
+          <li><a href="#">Privacy & Terms</a></li>
+          <li><a href="#">Mobile App</a></li>
+        </ul>
+      </nav>
+      <div class="fast-access">
+        <h3>Fast access</h3>
+        <button>Questions?
+          <span class="fa-regular fa-circle-question"></span>
+        </button>
+        <button>Settings
+          <span class="fa-solid fa-gear"></span>
+        </button>
+      </div>
+      <div class="language">
+        <h3>Language</h3>
+        <select name="language" id="language">
+          <option value="english">English</option>
+          <option value="portuguese">Português</option>
+        </select>
+      </div>
+    </div>
   </footer>
   
 </body>
