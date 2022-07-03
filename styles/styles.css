@@ -157,6 +157,7 @@ header nav ul li a {
   justify-content: center;
   align-items: center;
   border-right: solid #F4F4F4 1px;
+  cursor: pointer;
 }
 
 .other p {
@@ -641,6 +642,7 @@ main {
   color: #181818;
   margin-top: 31px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .buttons-about > div:first-child button:nth-child(2) {

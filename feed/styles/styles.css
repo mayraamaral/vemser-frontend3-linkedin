@@ -148,6 +148,7 @@ header nav ul li a {
   justify-content: center;
   align-items: center;
   border-right: solid #F4F4F4 1px;
+  cursor: pointer;
 }
 
 .other p {
