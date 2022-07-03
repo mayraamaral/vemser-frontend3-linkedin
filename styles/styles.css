@@ -238,7 +238,6 @@ aside {
   background: #FFFFFF;
   padding: 25px 0 0 30px;
   border-radius: 4px;
-
 }
 
 .data > div, .visitors-title {
@@ -413,17 +412,18 @@ footer  nav:nth-child(3), footer nav:nth-child(4) {
   cursor: pointer;
 }
 
-.fast-access button:nth-child(2) {
+.fast-access button:hover {
   background-color: #0275B1;
   border: 1px solid #0275B1;
   color: white;
+}
+
+.fast-access button {
+  border: solid 1px #0275B1;
+  color: #0275B1;
   margin-bottom: 10px;
 }
 
-.fast-access button:nth-child(3) {
-  border: solid 2px #0275B1;
-  color: #0275B1;
-}
 
 .language select {
   width: 270px;
