@@ -629,6 +629,7 @@ main {
   color: #0275B1;
   text-transform: uppercase;
   font-weight: bold;
+  font-family: 'Montserrat';
 }
 
 .profile-header > div:last-child > div:last-child > button:hover {
