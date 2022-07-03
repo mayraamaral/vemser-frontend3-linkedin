@@ -11,13 +11,15 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  background-color: #E5E5E5;
 }
 
 header {
   height: 80px;
   width: 100%;
-  /* background-color: gray; */
+  background-color: #FFFFFF;
 }
+
 
 .container {
   max-width: 1440px;
@@ -159,7 +161,7 @@ main {
 }
 
 .post-brandon {
-  background-color: #CCC;
+  background: #FFFFFF;
   width: 850px;
   height: 400px;
   display: flex;
@@ -167,6 +169,7 @@ main {
   justify-content: center;
   padding: 0 30px;
   border-radius: 4px;
+  margin-top: 40px;
 }
 
 .post-top {
@@ -284,7 +287,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #CCC;
+  background: #FFFFFF;
   border-radius: 4px;
   padding: 0 30px;
   margin-top: 20px;
@@ -292,6 +295,7 @@ main {
 
 aside {
   margin-left: 40px;
+  margin-top: 40px;
 }
 
 .aside-profile {
@@ -301,7 +305,7 @@ aside {
   align-items: center;
   width: 290px;
   height: 280px;
-  background-color: #CCC;
+  background: #FFFFFF;
   border-radius: 4px;
 }
 
@@ -346,7 +350,7 @@ aside {
 .write-new-article {
   width: 290px;
   height: 75px;
-  background-color: #CCC;
+  background: #FFFFFF;
   border-radius: 4px;
   margin-top: 20px;
   display: flex;
@@ -372,7 +376,7 @@ aside {
 .aside-groups {
   width: 290px;
   height: 360px;
-  background-color: #CCC;
+  background: #FFFFFF;
   border-radius: 4px;
   margin-top: 20px;
   display: flex;
@@ -421,7 +425,7 @@ aside {
 .aside-followed-hashtags {
   width: 290px;
   height: 230px;
-  background-color: #CCC;
+  background: #FFFFFF;
   border-radius: 4px;
   margin-top: 20px;
   display: flex;
@@ -454,7 +458,7 @@ aside {
 .aside-trending-articles {
   width: 290px;
   height: 300px;
-  background-color: #CCC;
+  background: #FFFFFF;
   border-radius: 4px;
   margin-top: 20px;
   display: flex;
@@ -496,7 +500,7 @@ footer {
   width: 100%;
   max-width: 1440px;
   display: flex;
-  background-color: #CCC;
+  background: linear-gradient(180deg, rgba(241, 244, 248, 0.8) 0%, rgba(241, 244, 248, 0) 100%);
   justify-content: space-between;
   margin-top: 30px;
 }
@@ -559,16 +563,16 @@ footer  nav:nth-child(3), footer nav:nth-child(4) {
   cursor: pointer;
 }
 
-.fast-access button:nth-child(2) {
+.fast-access button:hover {
   background-color: #0275B1;
   border: 1px solid #0275B1;
   color: white;
-  margin-bottom: 10px;
 }
 
-.fast-access button:nth-child(3) {
-  border: solid 2px #0275B1;
+.fast-access button {
+  border: solid 1px #0275B1;
   color: #0275B1;
+  margin-bottom: 10px;
 }
 
 .language select {

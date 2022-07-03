@@ -11,6 +11,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  background-color: #E5E5E5;
 }
 
 header {
@@ -25,12 +26,22 @@ header {
   margin: auto;
 }
 
+.container-footer {
+  max-width: 1440px;
+  display: flex;
+  margin: auto;
+}
+
 .logo {
   display: flex;
   height: 80px;
   width: 90px;
   align-items: center;
   justify-content: center;
+}
+
+header {
+  background-color: #FFFFFF;
 }
 
 header nav ul {
@@ -161,8 +172,9 @@ main {
 .education {
   width: 850px;
   height: 195px;
-  background-color: #CCC;
+  background-color: #FFFFFF;
   border-radius: 4px;
+  margin-top: 20px;
 }
 
 .education h2 {
@@ -205,9 +217,10 @@ aside {
 .data {
   width: 290px;
   height: 330px;
-  background-color: #CCC;
+  background-color: #FFFFFF;
   padding: 25px 0 0 30px;
   border-radius: 4px;
+  margin-top: 40px;
 }
 
 .data > div, .visitors-title {
@@ -215,6 +228,10 @@ aside {
   font-size: 10px;
   text-transform: uppercase;
   line-height: 11px;
+}
+
+.data > div > h2 {
+  margin-bottom: 20px;
 }
 
 .data a, .visitors a {
@@ -236,7 +253,8 @@ aside {
 .visitors {
   width: 290px;
   height: 420px;
-  background-color: #CCC;
+  background-color: #FFFFFF;
+  ;
   margin-top: 20px;
   border-radius: 4px;
   padding: 25px 0 0 30px;
@@ -282,7 +300,8 @@ aside {
 .courses {
   width: 290px;
   height: 330px;
-  background-color: #CCC;
+  background-color: #FFFFFF;
+  ;
   border-radius: 4px;
   margin: 20px 0 10px 0;
   padding: 25px 0 0 30px;
@@ -320,12 +339,12 @@ footer {
   width: 100%;
   max-width: 1440px;
   display: flex;
-  background-color: #CCC;
+  background: linear-gradient(180deg, rgba(241, 244, 248, 0.8) 0%, rgba(241, 244, 248, 0) 100%);
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
-footer > .container {
+footer > .container-footer {
   width: 100%;
   max-width: 1200px;
   display: flex;
@@ -383,16 +402,16 @@ footer  nav:nth-child(3), footer nav:nth-child(4) {
   cursor: pointer;
 }
 
-.fast-access button:nth-child(2) {
+.fast-access button:hover {
   background-color: #0275B1;
   border: 1px solid #0275B1;
   color: white;
-  margin-bottom: 10px;
 }
 
-.fast-access button:nth-child(3) {
-  border: solid 2px #0275B1;
+.fast-access button {
+  border: solid 1px #0275B1;
   color: #0275B1;
+  margin-bottom: 10px;
 }
 
 .language select {
@@ -408,4 +427,485 @@ footer  nav:nth-child(3), footer nav:nth-child(4) {
   border: solid 1px #0275B1;
   outline: none;
   cursor: pointer;
+}
+
+.container-main{
+  background: #E5E5E5;
+}
+
+main {
+  width: 1440px;
+  margin: auto;
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  width: 850px;
+  height: 360px;
+  background: #FFFFFF;
+  box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5);
+  border-radius: 4px;
+  margin-top: 40px;
+}
+
+.profile-header > div:first-child {
+  display: flex;
+  position: absolute;
+}
+
+.profile-header > div:first-child > img {
+  width: 850px;
+  height: 180px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.info-profile-header {
+  position: absolute;
+  display: flex;
+}
+
+.info-profile-header > a:first-child {
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 10px 30px rgba(113, 123, 133, 0.05);
+  border-radius: 4px;
+  margin-left: 30px;
+  margin-top: 20px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.info-profile-header > a:first-child > img {
+  position: absolute;
+  margin: 10px 10px;
+}
+
+.info-profile-header > div {
+  display: flex;
+  position: absolute;
+  width: 132px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 10px 30px rgba(113, 123, 133, 0.05);
+  border-radius: 4px;
+  margin-left: 642px;
+  margin-top: 20px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+
+.info-profile-header > div > a > img {
+  position: absolute;
+  margin: 10px 8px 10px 10px;
+}
+
+.info-profile-header > div > a:last-child > p {
+  position: absolute;
+  margin-left: 34px;
+  margin-top: 12px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #181818;
+}
+
+.info-profile-header > a:last-child {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 10px 30px rgba(113, 123, 133, 0.05);
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-left: 784px;  
+  z-index: 1;
+  cursor: pointer;
+}
+
+.info-profile-header > a:last-child > img {
+  position: absolute;
+  margin: 6px;
+}
+
+.profile-header > img {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  margin-top: 160px;
+  margin-left: 25px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.profile-header > div:last-child {
+  position: absolute;
+  display: flex;
+}
+
+.profile-header > div:last-child {
+  position: absolute;
+  display: flex;
+}
+
+.profile-header > div:last-child > div {
+  display: flex;
+}
+
+.profile-header > div:last-child > div > div:first-child {
+  display: flex;
+  margin-top: 205px;
+  margin-left: 220px;
+  align-items: center;
+}
+
+.profile-header > div:last-child > div > div > h3 {
+  width: 150px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #181818;
+}
+
+.profile-header > div:last-child > div > div:first-child > img {
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+}
+
+.profile-header > div:last-child > div > div:last-child {
+  display: flex;
+  margin-top: 206px;
+  margin-left: 189px;
+  align-items: center;
+}
+
+.profile-header > div:last-child > div > div:last-child > img {
+  width: 12.67px;
+  height: 12.67px;
+  margin-right: 9.33px;
+}
+
+.profile-header > div:last-child > div > div:last-child > small {
+  width: 225px;
+  font-size: 12px;
+  color: #181818;
+}
+
+.profile-header > div:last-child > p {
+  width: 583px;
+  margin-top: 243px;
+  margin-left: 220px;
+  position: absolute;
+  font-size: 14px;
+}
+
+.profile-header > div:last-child > div:last-child {
+  position: absolute;
+  margin-top: 293px;
+  margin-left: 220px;
+}
+
+.profile-header > div:last-child > div:last-child > button {
+  width: 170px;
+  height: 32px;
+  margin-right: 15px;
+  background: #FFFFFF;
+  border: 1px solid #0275B1;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #0275B1;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.profile-header > div:last-child > div:last-child > button:hover {
+  cursor: pointer;
+  background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
+  color: #FFFFFF;
+}
+
+.buttons-about > div:first-child {
+  height: 50px;
+}
+
+.buttons-about > div:first-child button {
+  position: absolute;
+  width: 240px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #E7E7E7;
+  font-size: 12px;
+  font-weight: bold;
+  color: #181818;
+  margin-top: 31px;
+  text-transform: uppercase;
+}
+
+.buttons-about > div:first-child button:nth-child(2) {
+  position: absolute;
+  margin-left: 240px;
+}
+
+.buttons-about > div:first-child button:last-child {
+  position: absolute;
+  margin-left: 480px;
+  border-radius: 0px 4px 0px 0px;
+}
+
+.buttons-about > div:first-child button:hover {
+  position: absolute;
+  margin-top: 21px;
+  height: 50px;
+  background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
+  border-radius: 4px 4px 0px 0px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.buttons-about > div:nth-child(2) {
+  height: 50px;
+  width: 850px;
+  background: linear-gradient(180deg, rgba(241, 244, 248, 0.8) 0%, rgba(241, 244, 248, 0) 100%);
+  margin-top: 21px;
+}
+
+.buttons-about > div:last-child {
+  width: 850px;
+  height: 150px;
+  background: #FFFFFF;
+}
+
+.buttons-about > div:last-child > h3 {
+  padding-top: 10px;
+  margin-left: 30px;
+  font-size: 18px;
+  color: #181818;
+}
+
+.buttons-about > div:last-child > p {
+  margin-top: 15px;
+  margin-left: 30px;
+  font-size: 14px;
+  color: #181818;
+}
+
+.buttons-about > div:last-child > a > p {
+  color: #0275B1;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.projects {
+  width: 850px;
+  height: 355px;
+  background: #FFFFFF;
+  box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5);
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.projects > div:first-child {
+  display: flex;
+  margin-left: 30px;
+  padding-top: 30px;
+}
+
+.projects > div:first-child > h3 {
+  font-size: 18px;
+  color: #181818
+}
+
+.projects > div:first-child > p {
+  font-size: 18px;
+  color: #747474;
+  margin-left: 15px;
+}
+
+.projects-banners {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-left: 30px;
+  margin-top: 25px;
+}
+
+.projects-banners > div > a > p {
+  color: #181818;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 15px;
+  height: 21px;
+}
+
+.projects-banners > div > small {
+  color: #181818;
+  font-size: 10px;
+  margin-top: 5px;
+  height: 15px;
+}
+
+.projects-banners > a {
+  color: #0275B1;
+  font-size: 12px;
+  margin-top: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.skills {
+  background: #FFFFFF;
+  box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5);
+  border-radius: 4px;
+  margin-top: 20px;
+  width: 850px;
+  height: 220px;
+}
+
+.skills > h3 {
+  font-size: 18px;
+  color: #181818;
+  padding-top: 30px;
+  margin-left: 30px;
+}
+
+.skills > div {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-left: 30px;
+  margin-top: 24px;
+}
+
+.skills > div > div {
+  width: 250px;
+  height: 80px;
+  border: 1px solid #F4F4F4;
+  border-radius: 6px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.skills > div > div > div {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: space-between;
+}
+
+.skills > div > div > div > p:first-child {
+  color: #181818;
+  font-size: 14px;
+  height: 21px;
+  font-weight: bold;
+}
+
+.skills > div > div > div > p:last-child {
+  color: #0275B1;
+  font-size: 14px;
+  height: 21px;
+  font-weight: bold;
+}
+
+.skills > div > div > img {
+  margin-left: 20px;
+  margin-top: 5px;
+  width: 99px;
+}
+
+.skills > a > p {
+  margin-top: 25px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #0275B1;
+  margin-left: 30px;
+}
+
+.experience {
+  width: 850px;
+  height: 345px;
+  background: #FFFFFF;
+  box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5);
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.experience > h3 {
+  font-size: 18px;
+  color: #181818;
+  padding-top: 30px;
+  margin-left: 30px;
+}
+
+.experience  > div {
+  display: flex;
+  margin-left: 30px;
+  margin-top: 25px;
+}
+
+.experience > div:last-child {
+  margin-top: 45px;
+}
+
+.experience  > div > div > img {
+  width: 54px;
+  height: 54px;
+  margin-top: 2px;
+  margin-right: 16px;
+}
+
+.experience > div > div > p {
+  height: 21px;
+  font-size: 14px;
+  color: #181818;
+  font-weight: bold;
+}
+
+.experience > div > div > div {
+  display: flex;
+}
+
+.experience > div > div > div > p:first-child {
+  color: #181818;
+  height: 15px;
+  font-weight: bold;
+  font-size: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.experience > div > div > div > p:last-child {
+  color: #181818;
+  height: 15px;
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+.experience > div > div > div > small:first-child {
+  color: #181818;
+  height: 15px;
+  font-size: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.experience > div > div > div > small:last-child {
+  color: #0275B1;
+  height: 15px;
+  font-size: 10px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.experience > div > div > div:last-child > small{
+  color: #181818;
+  margin-top: 10px;
+  font-weight: normal;
 }
