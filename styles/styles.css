@@ -148,6 +148,11 @@ header nav ul li a {
   margin-left: 5px;
 }
 
+.views p:nth-child(2) {
+  color: #02B033;
+  font-weight: bold;
+}
+
 .views p:first-child {
   margin-right: 4px;
 }
