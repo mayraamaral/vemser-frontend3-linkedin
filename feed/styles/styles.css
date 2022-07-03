@@ -11,18 +11,20 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  background: #E5E5E5;
 }
 
 header {
   height: 80px;
   width: 100%;
-  /* background-color: gray; */
+  background-color: #FFFFFF;
 }
 
 .container {
   max-width: 1440px;
   display: flex;
   margin: auto;
+  justify-content: center;
 }
 
 .logo {
@@ -83,6 +85,26 @@ header nav ul li a {
   outline: 0;
 } 
 
+.orange-circle-message {
+  position: absolute;
+  display: flex;
+  width: 16px;
+  height: 16px;
+  top: 12px;
+  margin-right: 27px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.orange-circle-message > div {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
 .profile {
   width: 330px;
   height: 80px;
@@ -130,6 +152,11 @@ header nav ul li a {
   margin-right: 4px;
 }
 
+.views p:nth-child(2) {
+  color: #02B033;
+  font-weight: bold;
+}
+
 .profile > div {
   display: flex;
   height: 80px;
@@ -146,6 +173,7 @@ header nav ul li a {
   justify-content: center;
   align-items: center;
   border-right: solid #F4F4F4 1px;
+  cursor: pointer;
 }
 
 .other p {
@@ -160,7 +188,7 @@ main {
 
 /*main*/
 .new-post { 
-  background: #CCC;
+  background: #FFFFFF;
   box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5);
   border-radius: 4px;
   width: 850px;
@@ -198,6 +226,7 @@ main {
   border: none;
   font-size: 18px;
   background: transparent;
+  font-family: 'Montserrat';
 }
 
 .new-post > div > div > input::placeholder {
@@ -276,7 +305,7 @@ main {
 }
 
 .theresa-post, .kyle-post, .post-brandon, .post-audrey {
-  background: #CCC;
+  background: #FFFFFF;
   border-radius: 4px;
   margin-bottom: 20px;
 }
@@ -479,7 +508,7 @@ aside {
   align-items: center;
   width: 290px;
   height: 280px;
-  background-color: #CCC;
+  background-color: #FFFFFF;
   border-radius: 4px;
 }
 
@@ -525,7 +554,7 @@ aside {
 .write-new-article {
   width: 290px;
   height: 75px;
-  background-color: #CCC;
+  background-color: #FFFFFF;
   border-radius: 4px;
   margin-top: 20px;
   display: flex;
@@ -556,7 +585,7 @@ aside {
 
 .aside-groups {
   width: 290px;
-  background-color: #CCC;
+  background-color: #FFFFFF;
   border-radius: 4px;
   margin-top: 20px;
   display: flex;
@@ -626,7 +655,7 @@ aside {
 
 .aside-followed-hashtags {
   width: 290px;
-  background-color: #CCC;
+  background-color: #FFFFFF;
   border-radius: 4px;
   margin-top: 20px;
   display: flex;
@@ -660,7 +689,7 @@ aside {
 
 .aside-trending-articles {
   width: 290px;
-  background-color: #CCC;
+  background-color: #FFFFFF;
   border-radius: 4px;
   margin-top: 20px;
   display: flex;
@@ -718,9 +747,8 @@ aside {
 footer {
   height: 215px;
   width: 100%;
-  max-width: 1440px;
   display: flex;
-  background-color: #CCC;
+  background: linear-gradient(180deg, rgba(241, 244, 248, 0.8) 0%, rgba(241, 244, 248, 0) 100%);
   justify-content: space-between;
   margin-top: 30px;
 }
@@ -783,16 +811,16 @@ footer  nav:nth-child(3), footer nav:nth-child(4) {
   cursor: pointer;
 }
 
-.fast-access button:nth-child(2) {
+.fast-access button:hover {
   background-color: #0275B1;
   border: 1px solid #0275B1;
   color: white;
-  margin-bottom: 10px;
 }
 
-.fast-access button:nth-child(3) {
-  border: solid 2px #0275B1;
+.fast-access button {
+  border: solid 1px #0275B1;
   color: #0275B1;
+  margin-bottom: 10px;
 }
 
 .language select {
