@@ -11,18 +11,20 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  background: #E5E5E5;
 }
 
 header {
   height: 80px;
   width: 100%;
-  /* background-color: gray; */
+  background-color: #FFFFFF;
 }
 
 .container {
   max-width: 1440px;
   display: flex;
   margin: auto;
+  justify-content: center;
 }
 
 .logo {
@@ -161,7 +163,8 @@ main {
 .education {
   width: 850px;
   height: 195px;
-  background-color: #CCC;
+  background: #FFFFFF;
+  margin-top: 20px;
   border-radius: 4px;
 }
 
@@ -200,14 +203,16 @@ main {
 
 aside {
   margin-left: 40px;
+  margin-top: 40px;
 }
 
 .data {
   width: 290px;
   height: 330px;
-  background-color: #CCC;
+  background: #FFFFFF;
   padding: 25px 0 0 30px;
   border-radius: 4px;
+
 }
 
 .data > div, .visitors-title {
@@ -236,7 +241,7 @@ aside {
 .visitors {
   width: 290px;
   height: 420px;
-  background-color: #CCC;
+  background: #FFFFFF;
   margin-top: 20px;
   border-radius: 4px;
   padding: 25px 0 0 30px;
@@ -282,7 +287,7 @@ aside {
 .courses {
   width: 290px;
   height: 330px;
-  background-color: #CCC;
+  background: #FFFFFF;
   border-radius: 4px;
   margin: 20px 0 10px 0;
   padding: 25px 0 0 30px;
@@ -318,9 +323,8 @@ aside {
 footer {
   height: 215px;
   width: 100%;
-  max-width: 1440px;
   display: flex;
-  background-color: #CCC;
+  background: linear-gradient(180deg, rgba(241, 244, 248, 0.8) 0%, rgba(241, 244, 248, 0) 100%);
   justify-content: space-between;
   margin-top: 20px;
 }
