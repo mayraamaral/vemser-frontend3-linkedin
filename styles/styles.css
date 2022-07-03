@@ -155,11 +155,16 @@ header nav ul li a {
 .views img {
   width: 15px;
   height: 15px;
-  margin-left: 5px;
+  margin-left: 2px;
 }
 
 .views p:first-child {
   margin-right: 4px;
+}
+
+.views p:nth-child(2) {
+  color: #02B033;
+  font-weight: bold;
 }
 
 .profile > div {
@@ -359,7 +364,7 @@ aside {
 footer {
   height: 215px;
   width: 100%;
-  max-width: 1440px;
+  /* max-width: 1440px; */
   display: flex;
   background: linear-gradient(180deg, rgba(241, 244, 248, 0.8) 0%, rgba(241, 244, 248, 0) 100%);
   justify-content: space-between;
