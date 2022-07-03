@@ -85,6 +85,26 @@ header nav ul li a {
   outline: 0;
 } 
 
+.orange-circle-message {
+  position: absolute;
+  display: flex;
+  width: 16px;
+  height: 16px;
+  top: 12px;
+  margin-right: 27px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.orange-circle-message > div {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
 .profile {
   width: 330px;
   height: 80px;
@@ -148,6 +168,7 @@ header nav ul li a {
   justify-content: center;
   align-items: center;
   border-right: solid #F4F4F4 1px;
+  cursor: pointer;
 }
 
 .other p {
