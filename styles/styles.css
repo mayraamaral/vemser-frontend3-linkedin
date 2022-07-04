@@ -69,8 +69,9 @@ header nav ul li a {
 
 .search span {
   color: #0275B1;
-  font-size: 20px;
   margin-left: 30px;
+  width: 24px;
+  height: 24px;
 }
 
 .search input {
@@ -221,6 +222,7 @@ main {
 
 .education-text p {
   font-size: 10px;
+  margin-bottom: 5px;
 }
 
 .education-text p:last-child {
@@ -232,25 +234,35 @@ aside {
   margin-top: 40px;
 }
 
-.data {
-  width: 290px;
-  height: 330px;
-  background: #FFFFFF;
-  padding: 25px 0 0 30px;
-  border-radius: 4px;
+.aside-border {
+  width: 230px;
+  height: 0;
+  border-top: 1px solid #F4F4F4;
 }
 
-.data > div, .visitors-title {
+.data {
+  width: 290px;
+  background: #FFFFFF;
+  padding-left: 30px;
+  border-radius: 4px;
+  box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5);
+}
+
+.data > div:first-child, .visitors-title {
   display: flex;
-  font-size: 10px;
+  font-size: 12px;
   text-transform: uppercase;
   line-height: 11px;
+  font-weight: bold;
+  padding-top: 25px;
+  margin-bottom: 20px;
 }
 
 .data a, .visitors a {
   color: #0275B1;
   margin-left: 25px;
   font-weight: bold;
+  text-decoration: underline;
 }
 
 .data > h2 {
@@ -261,26 +273,31 @@ aside {
 
 .data > p {
   font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.data > p:last-child {
+  padding-bottom: 30px;
 }
 
 .visitors {
   width: 290px;
-  height: 420px;
   background: #FFFFFF;
   margin-top: 20px;
   border-radius: 4px;
-  padding: 25px 0 0 30px;
+  padding-left: 30px;
 }
 
 .visitors-title {
   width: 230px;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .visitors-cards {
   width: 230px;
   flex-direction: column;
+  margin-top: 20px;
 }
 
 .visitor {
@@ -290,7 +307,6 @@ aside {
 }
 
 .visitor > div {
-  height: 52px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -303,26 +319,31 @@ aside {
 .visitor > div > p:first-child {
   font-size: 14px;
   font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .visitor > div > p:last-child {
   font-size: 10px;
 }
 
-.courses {
-  width: 290px;
-  height: 330px;
-  background: #FFFFFF;
-  border-radius: 4px;
-  margin: 20px 0 10px 0;
-  padding: 25px 0 0 30px;
+.visitors-cards > .visitor:last-child {
+  padding-bottom: 30px;
 }
 
-.courses > h2 {
+.courses {
+  width: 290px;
+  background: #FFFFFF;
+  border-radius: 4px;
+  margin-top: 20px;
+  padding-left: 30px;
+}
+
+.courses > p:first-child {
   text-transform: uppercase;
   font-size: 12px;
-  margin-bottom: 40px;
-
+  margin-bottom: 20px;
+  padding-top: 25px;
+  font-weight: bold;
 }
 
 .video {
@@ -336,13 +357,29 @@ aside {
   margin-left: 15px;
 }
 
-.video > div > h2 {
+.video > div > p {
   font-size: 14px;
   margin-bottom: 5px;
+  font-weight: bold;
 }
 
-.video > div > p {
+.gradient-text {
+  background: linear-gradient(91.13deg, #181818 79.16%, rgba(24, 24, 24, 0) 99.54%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.video > div > small {
   font-size: 10px;
+}
+
+.courses > p:last-child {
+  color: #0275B1;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding-bottom: 28px;
 }
 
 footer {
@@ -432,6 +469,9 @@ footer  nav:nth-child(3), footer nav:nth-child(4) {
   font-family: 'Montserrat';
   font-weight: bold;
   padding-left: 15px;
+  background: #FFFFFF;
+  border: 1px solid #F0F0F0;
+  text-transform: uppercase;
 }
 
 .language select:focus {
@@ -843,7 +883,6 @@ main {
 
 .experience {
   width: 850px;
-  height: 345px;
   background: #FFFFFF;
   box-shadow: 0px 20px 60px rgba(241, 244, 248, 0.5);
   border-radius: 4px;
@@ -855,16 +894,20 @@ main {
   color: #181818;
   padding-top: 30px;
   margin-left: 30px;
+  margin-bottom: 25px;
 }
 
 .experience  > div {
   display: flex;
   margin-left: 30px;
-  margin-top: 25px;
 }
 
-.experience > div:last-child {
-  margin-top: 45px;
+.border-experience {
+  width: 790px;
+  height: 0;
+  border-top: 1px solid #F4F4F4;
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 
 .experience  > div > div > img {
@@ -921,4 +964,5 @@ main {
   color: #181818;
   margin-top: 10px;
   font-weight: normal;
+  margin-bottom: 30px;
 }

@@ -69,7 +69,8 @@ header nav ul li a {
 
 .search span {
   color: #0275B1;
-  font-size: 20px;
+  width: 24px;
+  height: 24px;
   margin-left: 30px;
 }
 
@@ -830,6 +831,9 @@ footer  nav:nth-child(3), footer nav:nth-child(4) {
   font-family: 'Montserrat';
   font-weight: bold;
   padding-left: 15px;
+  background: #FFFFFF;
+  border: 1px solid #F0F0F0;
+  text-transform: uppercase;
 }
 
 .language select:focus {
