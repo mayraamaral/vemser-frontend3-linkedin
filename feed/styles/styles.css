@@ -11,7 +11,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background: #E5E5E5;
+  background: #F7F9FB;
 }
 
 header {
@@ -402,7 +402,7 @@ main {
 }
 
 .topic {
-  background-color: #E9F0F8;
+  background-color: #F7F9FB;
   width: 790px;
   height: 80px;
   border-radius: 4px;
@@ -579,7 +579,7 @@ aside {
 }
 
 .write-new-article > button:hover {
-  background: white;
+  background: #FFFFFF;
   color: #0275B1;
   border: solid 1px #0275B1;
 }
@@ -810,6 +810,7 @@ footer  nav:nth-child(3), footer nav:nth-child(4) {
   padding: 0 15px;
   justify-content: space-between;
   cursor: pointer;
+  background: transparent
 }
 
 .fast-access button:hover {
